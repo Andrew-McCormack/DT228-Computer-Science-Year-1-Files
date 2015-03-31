@@ -117,7 +117,7 @@ void Check_File(char filename[20])
     infile = fopen (filename,"rb");
     if (infile == NULL)
     {
-        printf("\nError opening %s\n\n", filename);
+        printf("\nError opening %s, not created yet?\n\n", filename);
     }
     else
     {
