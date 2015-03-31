@@ -1,0 +1,234 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 400px;
+    border-right-color:#EE3B3B;
+    border-right-width:150px;
+    border-right-style:dotted;
+
+    border-left-color:#EE3B3B;
+    border-left-width:150px;
+    border-left-style:dotted;
+}
+
+img	{
+		margin: 0 450;
+}
+
+ul {
+        margin: 30px;
+        padding: 15px;
+        list-style: none;
+        background-color: #330000;
+    }
+    
+li {
+        display: inline;
+        text-align: center;
+        padding: 30px;
+        font: bold 1.9em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+		font-size: 1.9em;
+		color: white;
+    }
+    
+a:link {
+            color: #FFF;
+			text-decoration: none;
+        }
+        
+a:visited {
+              color: #F60;
+           }
+           
+a:hover {
+            color: #F00;
+        }
+        
+a:active    {
+                color: #F00;
+            }
+			
+.active {
+       background: url(../img/paper-clip.png) center left no-repeat
+	   ; 
+}
+            
+
+.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
+@media (min-width:768px)
+{.container{width:750px}}
+@media (min-width:992px)
+{.container{width:970px}}
+@media (min-width:1200px)
+{.container{width:1170px}}
+.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
+.row{margin-left:-15px;margin-right:-15px}
+
+div.imagecaption{
+     float: left;
+     width: 1038px;
+     margin: 0.82em 1em 1em 4em;
+     display:block;
+     padding:2px;
+     background-color: #330000;
+	 color: white;
+  }
+
+div.imagecaption img{
+    float: left;
+    border: 1px solid #fff;
+}
+div.imagecaption p {
+    float: left;
+    margin-left: 8px;
+	font: bold 1.2em 'Lemon', sans-serif, serif, Georgia, serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding:15px;
+    word-wrap: break-word;
+}
+	
+.captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+		
+		form, button{border:0; margin:0; padding:0;background-color:#FFCCFF;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto;
+width:400px;
+padding:14px;
+color:#8C1717;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+}
+
+
+
+div.caption1{
+	float: left;
+	text-align: left;
+	font: bold 1.5em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+	font-size: 1.5em;
+	color: white;
+}
+
+div.caption2{
+	float: right;
+	text-align: left;
+	font: bold 1.5em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+	font-size: 1.5em;
+	color: white;
+}
+
+div.caption1 h2	{
+					text-align: center;
+}
+
+div.caption2 h2	{
+					text-align: center;
+}
+		
+
+#googleMap	{
+				margin: 40px 215px;
+				width:750px;
+				height:570px;
+}
+
+.tableformat	{
+			padding: 30px;
+		}
+		
+.layer img {
+			position:absolute;
+			left:640px;
+			top:10px;
+			z-index:-1;
+		}

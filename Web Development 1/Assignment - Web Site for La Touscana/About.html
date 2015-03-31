@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<link href="css/la_touscana.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
+<scriptsrc="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+<script>
+
+
+function initialize()
+{
+	var myCenter=new google.maps.LatLng(53.290296, -6.127115);
+var mapProp = {
+  center:myCenter,
+  zoom:17,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;</script>
+</head>
+
+<body bgcolor="#8C1717">
+
+<div class="container">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Our Menus.html">Our Menus</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Online Orders.html">Online Orders</a></li>
+        <li class="active"><a href="About.html">About</a></li>
+      </ul>
+      
+      <div id="googleMap"></div>
+     
+     <div class="caption1"><h2>Location</h2>
+      5 Windsor Terrace</br>
+      Dun Laoghaire</br>
+      Co. Dublin</br>
+      Ireland</br></br>
+      Phone: +353 1 230 0890</br>
+      Email: reservations@toscana.ie
+      </div>
+      
+      <div class="caption2"><h2>Public Transport / Parking</h2>
+      <a href="http://www.parkrite.ie/">Park Rite Pavilion Car Park</a></br>
+      <a href="http://www.irishrail.ie/about-us/dart-commuter">Dun Laoghaire Train Station</a></br>
+      <a href="http://www.dublinbus.ie/en/Your-Journey1/Timetables/?searchtype=place&searchquery=Dun+Laoghaire">Dublin Bus Routes</a></br>
+      </div>
+      
+      </div>
+      
+     
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <Windows.h>
+# define SIZE 10
+/* Author: Andrew Mc Cormack
+     Date: 18/2/14
+     Program: Excercise 2
+     Details: This program will use a function to find the highest number in a 1d array containing 5 numbers. In the main(), it will ask the user to enter 5 numbers and store these in the array. It will then
+     pass the array to a function which will find the highest number. It will then return this number to main() and display it. */
+                
+//Highest_Num_Array() prototype declared
+int Highest_Num_Array(int[]);
+void main()
+{
+    int value = [];
+    
+    printf("Please enter the length of the side of your Square \n");
+    scanf("%d", &Square);
+    
+
+    // Area_Square() function is called
+    Square_Ans = Area_Square(Square);
+    //Area_Square()  function terminates
+    
+     // Area_Circle() function is called
+    Circle_Ans = Area_Circle(Circle);
+    //Area_Circle()  function terminates
+    
+
+    printf("The area of the Square is %d \n", Square_Ans);
+    printf("The area of the Circle is %d \n", Circle_Ans);
+ 
+    Sleep(15000);
+}//end main()
+
+
+int Area_Square(int Square_Copy)
+{
+    int Square_Copy_Ans = Square_Copy * Square_Copy;
+    return(Square_Copy_Ans);
+}
+
+int Area_Circle(int Circle_Copy)
+{
+    int Circle_Copy_Ans = 0;
+    int Pi = 3.14;
+    
+    Circle_Copy_Ans = Pi * (Circle_Copy * Circle_Copy);
+    return(Circle_Copy_Ans);
+}
+
+

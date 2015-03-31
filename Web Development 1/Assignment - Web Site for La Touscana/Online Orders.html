@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Our Menus</title>
+<link href="css/la_touscana.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
+</head>
+
+<body bgcolor="#8C1717">
+
+<div class="container">
+
+     <ul>
+     
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Our Menus.html">Our Menus</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li class="active"><a href="Online Orders.html">Online Orders</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      
+      
+      <div id="stylized" class="myform">
+<form id="myform" action="MAILTO:reservations@toscana.ie" method="post" enctype="text/plain" name="form">
+<h1>La Toscana Order Form</h1>
+<p>Get your meal delivered staight to your door!</p>
+
+<label>Name
+<span class="small">Add your name</span>
+</label>
+<input type="text" name="name" id="name" />
+
+<label>Email
+<span class="small">Add a valid address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Phone Number
+<span class="small">Min. size 6 chars</span>
+</label>
+<input type="text" name="name" id="phone" />
+
+<label>Address
+<span class="small">Must be within Dun Laoghaire</span>
+</label>
+<input type="text" name="name" id="address" />
+
+<label>Collection
+<span class="small"><input type="radio" name="sex" value="collection"></span>
+</label>
+<label>Delivery
+<span class="small"><input type="radio" name="sex" value="delivery"></span>
+</label>
+
+<label>
+<span class="small"><textarea name="comments" id="comments">
+Put your order in here
+</textarea></span></label>
+
+<label>Pay in cash
+<span class="small"><input type="checkbox" name="payment" value="cash"></span></label>
+<label>Pay by card
+<span class="small"><input type="checkbox" name="payment" value="card"></span></label>
+
+
+<label>
+<span class="small"><input type="submit" value="Submit"></span></label>
+<div class="spacer"></div>
+
+</form>
+</div>
+
+<div class = "caption1"><h2>Orders will only be accepted after 8p.m.</br>
+						Please click the check button to find out if we're</br>
+                        aceppting orders
+                        <button onclick="myFunction()">Check</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x="";
+var time=new Date().getHours();
+if (time<20)
+  {
+  x="Not accepting orders right now, please check back later";
+  }
+else
+  {
+  x="Now accepting orders";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script></h2>
+</div>
+
+<div class = "tableformat">
+<table width="100%"  border="0">
+  <tr valign="top">
+    <td style="background-color:#FFCCFF;width:20%;
+                  text-align: center;font: bold 1.7em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+	font-size: 1.7em;">
+      <FONT COLOR= "8C1717">Day</FONT><br />
+      Monday<br />
+      Tuesday<br />
+      Wednesday<br />
+      Thursday<br />
+      Friday<br />
+      Saterday<br />
+      Sunday<br />
+    </td>
+    <td style="background-color:#eeeeee;height:200px;
+                  width:40%;;font: bold 1.7em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+	font-size: 1.7em;text-align: center;">
+        <FONT COLOR= "8C1717">Seasonal Daily Soup Bowl</FONT><br />
+        Tomato Soup<br />
+        Mushroom Soup<br />
+        Minestrone Soup<br />
+        French Onion Soup<br />
+        Bean And Sausage Soup<br />
+        Straciatella<br />
+        Italian Noodle Soup<br />  
+    </td>
+        <td style="background-color:#FFCCFF;
+                      width:20%;text-align: center;font: bold 1.7em 'Playfair Display SC', serif, cursive, Georgia,         serif;
+	font-size: 1.7em;">
+      <FONT COLOR= "8C1717">Opening Hours</FONT><br />
+      9.00a.m. - 12.00p.m.<br />
+      9.00a.m. - 12.00p.m.<br />
+      9.00a.m. - 1.00a.m<br />
+      9.00a.m. - 12.00p.m.<br />
+      11.00a.m. - 2.00a.m.<br />
+      11.00a.m. - 2.00a.m.<br />
+      9.00a.m. 10.00p.m.<br />
+    </td>
+   </tr>
+  <table>
+  </div>
+
+</div>
+      
+</body>
+</html>
